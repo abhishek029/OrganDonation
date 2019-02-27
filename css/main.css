@@ -1,1 +1,19 @@
-section{margin:80px}
+#routerView{margin-top:55px}
+
+
+/* quize css */
+#quiz{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-repeat: no-repeat;
+    background-image: url("../images/quizpromo_desktop.jpg");
+}
+#quiz h2{
+    margin-top: 225px;
+    font-size: 40px;
+}
+#quiz .playBtn{
+    background-color: #bd467e;
+    color: white;
+}

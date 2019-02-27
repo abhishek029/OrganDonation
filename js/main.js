@@ -1,20 +1,31 @@
 (() => {
     const HomePageComponent = { 
         template: `
-        <section class="row">
-        <div class="col-sm-6 offset-sm-2">
-            <h2 class="col-sm-8">TWO MINUTES COULD SAVE EIGHT LIVES</h2>
-            <p class="col-sm-8">All you need is health card and a couple of minutes to become an organ donor. 
-                <a href="https://beadonor.ca/" target="_blank">Sign up now!</a>
-            </p>
-        </div>
-        </section>
         `
     }
     
-    const SignupComponent = {
+    const QuizComponent = {
         template: `
-        <h2>Subscribe From</h2>
+        <div id="quiz">
+            <section class="row">
+                <div class="col-xs-10 offset-sm-3 col-sm-6">
+                    
+                    <div class="col-xs-6">
+                        <h2 class="col">ORGAN DONATION QUIZ</h2>
+                    </div>
+
+                    <div class="col-xs-10">
+                        <p class="col">There's a lot of misinformation out there about organ donation. Can you seperate the facts from fiction?</p>
+                    </div>
+                    
+                    <div class="col-xs-4 offset-xs-3 offset-sm-4">
+                        <button class=" offset-xs-4 btn playBtn">PLAY NOW</button>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+        </div>
         `
     }
     const VideoComponent = {
@@ -28,7 +39,7 @@
 
     const routes =[
         { path: '/', name: 'home', component:HomePageComponent},
-        { path: '/contact', name: 'contact', component:SignupComponent},
+        { path: '/quiz', name: 'contact', component:QuizComponent},
         { path: '/video', name: 'video', component:VideoComponent},
         { path: '/*', name: 'error', component:ErrorPageComponent},
     ]
@@ -51,7 +62,7 @@
         },
         components:{
             'homepagecomponent' : HomePageComponent,
-            'signupcomponent' :SignupComponent,
+            'signupcomponent' :QuizComponent,
             'videocomponent' :VideoComponent,
             'errorpagecomponent' : ErrorPageComponent
         },
