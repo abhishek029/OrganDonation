@@ -1,7 +1,14 @@
 (() => {
     const HomePageComponent = { 
         template: `
-            <h2>Home Page</h2>
+        <section class="row">
+        <div class="col-sm-6 offset-sm-2">
+            <h2 class="col-sm-8">TWO MINUTES COULD SAVE EIGHT LIVES</h2>
+            <p class="col-sm-8">All you need is health card and a couple of minutes to become an organ donor. 
+                <a href="https://beadonor.ca/" target="_blank">Sign up now!</a>
+            </p>
+        </div>
+        </section>
         `
     }
     
