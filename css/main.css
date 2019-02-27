@@ -1,6 +1,5 @@
 #routerView{margin-top:55px}
 
-
 /* quize css */
 #quiz{
     width: 100%;
@@ -17,3 +16,34 @@
     background-color: #bd467e;
     color: white;
 }
+
+/*--------------------Home Page CSS-----------------------*/
+#promo{
+    background-image: url('../images/promo_desktop.jpg');
+    height: 603px;
+    color: white;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+#promo h2{
+    background-color: red;
+}
+
+#text{
+    margin-top: 250px;
+}
+
+#adds{
+    background: #ededed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#adds p{
+    margin-top: 40px;
+}
+#content{
+    background: #013d7b;
+    padding: 20px;
+    color: white;
+}
+
