@@ -38,9 +38,27 @@
         `
     }
     
-    const SignupComponent = {
+    const QuizComponent = {
         template: `
-        <h2>Subscribe From</h2>
+        <div id="quiz">
+            <section class="row">
+                <div class="col-xs-10 offset-sm-3 col-sm-6">
+                    
+                    <div class="col-xs-6">
+                        <h2 class="col">ORGAN DONATION QUIZ</h2>
+                    </div>
+
+                    <div class="col-xs-10">
+                        <p class="col">There's a lot of misinformation out there about organ donation. Can you seperate the facts from fiction?</p>
+                    </div>
+                    
+                    <div class="col-xs-4 offset-xs-3 offset-sm-4">
+                        <button class=" offset-xs-4 btn playBtn">PLAY NOW</button>
+                    </div>                  
+                    
+                </div>
+            </section>
+        </div>
         `
     }
     const VideoComponent = {
@@ -54,7 +72,7 @@
 
     const routes =[
         { path: '/', name: 'home', component:HomePageComponent},
-        { path: '/contact', name: 'contact', component:SignupComponent},
+        { path: '/quiz', name: 'contact', component:QuizComponent},
         { path: '/video', name: 'video', component:VideoComponent},
         { path: '/*', name: 'error', component:ErrorPageComponent},
     ]
@@ -77,7 +95,7 @@
         },
         components:{
             'homepagecomponent' : HomePageComponent,
-            'signupcomponent' :SignupComponent,
+            'signupcomponent' :QuizComponent,
             'videocomponent' :VideoComponent,
             'errorpagecomponent' : ErrorPageComponent
         },
