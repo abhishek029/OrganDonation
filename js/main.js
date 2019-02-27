@@ -1,8 +1,8 @@
 (() => {
     const HomePageComponent = { 
         template: `
-        <section class="row">
-        <div class="col-sm-6 offset-sm-2">
+        <section id="promo" class="row">
+        <div class="col-sm-6 offset-sm-2" id="text">
             <h2 class="col-sm-8">TWO MINUTES COULD SAVE EIGHT LIVES</h2>
             <p class="col-sm-8">All you need is health card and a couple of minutes to become an organ donor. 
                 <a href="https://beadonor.ca/" target="_blank">Sign up now!</a>

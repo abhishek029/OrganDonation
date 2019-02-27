@@ -1,1 +1,24 @@
 section{margin:80px}
+
+/*--------------------Home Page CSS-----------------------*/
+#promo{
+    background-image: url('../images/promo_desktop.jpg');
+    height: 100vh;
+    color: white;
+}
+#promo h2{
+    background-color: red;
+}
+
+#promo a{
+    color: white;
+}
+
+a:hover{
+    background-color: black;
+    color:white;
+}
+
+#text{
+    margin-top: 500px;
+}
