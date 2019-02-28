@@ -1,24 +1,64 @@
-section{margin:80px}
 
 /*--------------------Home Page CSS-----------------------*/
 #promo{
     background-image: url('../images/promo_desktop.jpg');
-    height: 100vh;
+    height: 603px;
     color: white;
+    background-repeat: no-repeat;
+    width: 100%;
 }
 #promo h2{
     background-color: red;
 }
 
-#promo a{
+#text{
+    margin-top: 250px;
+}
+
+#adds{
+    background: #ededed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#adds p{
+    margin-top: 40px;
+}
+#content{
+    background: #013d7b;
+    padding: 20px;
     color: white;
 }
 
-a:hover{
-    background-color: black;
-    color:white;
+/*---------------------Video Page CSS-------------------------*/
+
+#mainVideo div{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #ededed;
 }
 
-#text{
-    margin-top: 500px;
+#moreVideo div{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#moreVideo{
+    background:#bd467e;
+}
+
+#moreVideo p{
+    color: white;
+}
+#contactStory{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #ededed;
+}
+#shareHead{
+    color: White;
+    background: #013d7b;
+}
+
+.contactBtn{
+    color: white;
+    background: #a787b8;
 }
