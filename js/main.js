@@ -20,29 +20,17 @@
             
             <section class="row" id="content">
                 <div class="col-sm-4">
-
-                    <img src="../images/hourglass.svg" alt="Hourglass" class="col-sm-4 offset-sm-5 img-responsive">
-
                     <img src="images/hourglass.svg" alt="Hourglass" class="col-sm-4 offset-sm-5 img-responsive">
-
                     <p class="col-sm-6 offset-sm-4 text-center">4500 Canadains and 1500 ontarians are currently waiting for Organ Donation</p> 
                 </div>
         
                 <div class="col-sm-4">
-
-                    <img src="../images/heart.svg" alt="Heart" class="col-sm-4 offset-sm-5">
-
                     <img src="images/heart.svg" alt="Heart" class="col-sm-4 offset-sm-5">
-
                     <p class="col-sm-6 offset-sm-4 text-center">Your current or past medical history does not prevent you from registering to be a donor</p>                    
                 </div>
                     
                 <div class="col-sm-4">
-
-                    <img src="../images/eight.svg" alt="Eight" class="col-sm-4 offset-sm-5"> 
-
                     <img src="images/eight.svg" alt="Eight" class="col-sm-4 offset-sm-5"> 
-
                     <p class="col-sm-6 offset-sm-4 text-center">One donor can save up to 8 lives through donation and enhance even more through the gift pf tissue</p>                
                 </div>
             </section>
