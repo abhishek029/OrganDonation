@@ -1,3 +1,5 @@
+
+=======
 #routerView{margin-top:55px}
 
 /* quize css */
@@ -16,6 +18,7 @@
     background-color: #bd467e;
     color: white;
 }
+
 
 /*--------------------Home Page CSS-----------------------*/
 #promo{
@@ -45,5 +48,39 @@
     background: #013d7b;
     padding: 20px;
     color: white;
+}
+
+/*---------------------Video Page CSS-------------------------*/
+
+#mainVideo div{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #ededed;
+}
+
+#moreVideo div{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#moreVideo{
+    background:#bd467e;
+}
+
+#moreVideo p{
+    color: white;
+}
+#contactStory{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #ededed;
+}
+#shareHead{
+    color: White;
+    background: #013d7b;
+}
+
+.contactBtn{
+    color: white;
+    background: #a787b8;
 }
 
