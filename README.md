@@ -16,11 +16,16 @@ Adobe photoshop
 
 
 # Authors
-Abhishek Patel- Backend Developer 
+Abhishek Patel- Backend Developer
+-
 Jinkal Patel- Frontend Developer
+-
 Connor Herring- motion 
+-
 Kyle smeltzer - Design
+-
 Main Shalabi - Project Manager
+-
 
 
 
