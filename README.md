@@ -6,7 +6,7 @@ This project is to inspire people across Ontario to Sign up and become an Organ 
 any working computer that allows you to have Internet access to view our website, that inspires you to sign up and become an organ Donor
 
 # Built With
-# Coding: HTML, CSS, JS, PHP
+CODING: HTML, CSS, JS, PHP
 
 Design & Video:
 Adobe After Effects 
