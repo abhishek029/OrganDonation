@@ -29,11 +29,19 @@
     width: 100%;
 }
 #promo h2{
-    background-color: red;
+    background-color:#bd467e;
 }
 
 #text{
-    margin-top: 250px;
+    margin-top: 400px;
+}
+
+#promo a:link {
+    color: #e8a5c4;
+}
+
+#promo a:hover {
+    color: #bd467e;
 }
 
 #adds{
