@@ -67,70 +67,21 @@
             <section class="row" id="mainVideo">
             <div class="col-sm-12">
                 <video class="col-sm-8 offset-sm-2" controls>
-                <source src="video/video1.mp4"></source>
+                <source :src="'video/'+currentDonorDetails.donor_video"></source>
                 </video>
+                {{currentDonorDetails.donor_video}}
                  <p class="col-sm-6 offset-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos excepturi officia saepe blanditiis vero nostrum quae iusto possimus minus necessitatibus? Voluptatem ab esse animi veniam perspiciatis labore suscipit voluptates alias! All you need is health card and a couple of minutes to become an organ donor.</p>
                 <button class="col-sm-4 offset-sm-4 playBtn">REGISTER NOW</button>
             </div>
             </section>
 
+            <!-- code for all recipients in database -->
             <section class="row" id="moreVideo">
-                <div class="col-sm-3">
-                    <video class="col-sm-9 offset-sm-3" controls>
-                    <source src="video/video1.mp4"></source>
-                    </video>
-                    
-                    <h3 class="col-sm-9 offset-sm-3">Recipient 1</h3>
-                    <p class="col-sm-9 offset-sm-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quis velit atque ad praesentium voluptates aliquam nesciunt quo quidem. Repellat, voluptatibus. Voluptatem amet pariatur voluptas consequuntur quam ab consequatur vel!</p> 
-                </div>
-
-                <div class="col-sm-3">
-                    <video class="col-sm-9 offset-sm-3" controls>
-                    <source src="video/video1.mp4"></source>
-                    </video>
-                    <h3 class="col-sm-9 offset-sm-3">Recipient 2</h3>
-                    <p class="col-sm-9 offset-sm-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio officia non doloremque repellendus facere obcaecati quam molestias dolores voluptas veritatis accusamus nemo reiciendis, ipsam maiores cumque necessitatibus! Esse, similique sequi?</p>                    
-                </div>
-                        
-                <div class="col-sm-3">
-                    <video class="col-sm-9 offset-sm-3" controls>
-                    <source src="video/video1.mp4"></source>
-                    </video>
-                    <h3 class="col-sm-9 offset-sm-3">Recipient 3</h3>
-                    <p class="col-sm-9 offset-sm-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste omnis beatae earum dicta excepturi laboriosam aut quae in, dignissimos consectetur optio, quia velit! Quisquam harum cumque eveniet quis, minima quibusdam?</p>                
-                </div>
-
-                <div class="col-sm-3">
-                    <video class="col-sm-9 offset-sm-3" controls>
-                    <source src="video/video1.mp4"></source>
-                    </video>
-                    <h3 class="col-sm-9 offset-sm-3">Recipient 4</h3>
-                    <p class="col-sm-9 offset-sm-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus voluptas obcaecati dolor repellat animi labore voluptatum quod dolorem, qui nemo laudantium nostrum repellendus voluptatibus dolore a? Vitae, vero quia.</p>                
-                </div>
-                    
-                <div class="col-sm-3">
-                    <img src="images/hourglass.svg" alt="Hourglass" class="col-sm-4 offset-sm-5 img-responsive">
-                    <h3 class="col-sm-9 offset-sm-3">Recipient 5</h3>
-                    <p class="col-sm-9 offset-sm-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quis velit atque ad praesentium voluptates aliquam nesciunt quo quidem. Repellat, voluptatibus. Voluptatem amet pariatur voluptas consequuntur quam ab consequatur vel!</p> 
-                </div>
-                
-                <div class="col-sm-3">
-                    <img src="images/heart.svg" alt="Heart" class="col-sm-4 offset-sm-5">
-                    <h3 class="col-sm-9 offset-sm-3">Recipient 6</h3>
-                    <p class="col-sm-9 offset-sm-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio officia non doloremque repellendus facere obcaecati quam molestias dolores voluptas veritatis accusamus nemo reiciendis, ipsam maiores cumque necessitatibus! Esse, similique sequi?</p>                    
-                </div>
-                            
-                <div class="col-sm-3">
-                    <img src="images/eight.svg" alt="Eight" class="col-sm-4 offset-sm-5"> 
-                    <h3 class="col-sm-9 offset-sm-3">Recipient 7</h3>
-                    <p class="col-sm-9 offset-sm-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste omnis beatae earum dicta excepturi laboriosam aut quae in, dignissimos consectetur optio, quia velit! Quisquam harum cumque eveniet quis, minima quibusdam?</p>                
-                </div>
-                
-                <div class="col-sm-3">
-                    <img src="images/eight.svg" alt="Eight" class="col-sm-4 offset-sm-5"> 
-                    <h3 class="col-sm-9 offset-sm-3">Recipient 8</h3>
-                    <p class="col-sm-9 offset-sm-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus voluptas obcaecati dolor repellat animi labore voluptatum quod dolorem, qui nemo laudantium nostrum repellendus voluptatibus dolore a? Vitae, vero quia.</p>                
-                </div>
+                <div v-for="donor in retrivedDonor" class="col-sm-3">
+                    <img class="col-sm-9 offset-sm-3" :src="'images/'+donor.donor_thumb" :alt="donor.donor_name">
+                    <h3 class="col-sm-9 offset-sm-3 text-center">{{donor.donor_name}}</h3>
+                    <p class="col-sm-9 offset-sm-3  text-center">{{donor.donor_desc}}</p> 
+                </div>               
             </section>
 
             <section class="row" id="contactStory">
@@ -141,8 +92,45 @@
                 <button class="col-sm-4 offset-sm-4 contactBtn">CONTACT US</button>
             </section>
         </div>
-    `
+    `,
+
+    data(){
+        return{
+        testmessage: "sup",
+        
+        currentDonorDetails: {},
+
+        retrivedDonor: []
+        }
+    },
+
+    created: function(){
+        console.log("this is vue created");
+        this.loadDonors();
+    },
+
+    methods:{
+        calledOnParent(){
+            console.log("this method is from vue");
+        },
+        loadDonors(){            
+            
+            let url = `./admin/scripts/index.php?donor=1`;
+
+            console.log(url);
+            fetch(url)
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    this.retrivedDonor = data;
+                    this.currentDonorDetails = data[0];
+                })
+                .catch(function(error){
+                    console.error(error);
+                });
+        }
     }
+}
     const ErrorPageComponent = {
         template: "<h2>This is Error page</h2>"
     }
@@ -157,18 +145,39 @@
         routes
     });
     //Vue instance
-    const vn = new Vue({
+    const vm = new Vue({
         el: "#app",
         data:{
-            testmessage: "sup"
+            testmessage: "sup",
+            
+            
         },
+
+        created: function(){
+            console.log("this is vue created");
+            this.loadDonors();
+        },
+
         methods:{
             calledOnParent(){
                 console.log("this method is from vue");
+            },
+            loadDonors(){            
+                
+                let url = `./admin/scripts/index.php?donor=1`;
+    
+                console.log(url);
+                fetch(url)
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data);
+                        this.retrivedDonor = data;
+                        this.currentDonorDetails = data[0];
+                    })
+                    .catch(function(error){
+                        console.error(error);
+                    });
             }
-        },
-        created: function(){
-            console.log("this is vue created");
         },
         components:{
             'homepagecomponent' : HomePageComponent,
