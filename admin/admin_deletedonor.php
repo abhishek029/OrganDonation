@@ -16,7 +16,11 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.1/css/foundation-float.css">
 </head>
 <body>
-	<h2>Update Record<h2>
+	
+	<?php include('header.php'); ?>
+	
+	<h2 class="columns subHead small-12 text-center">Delete Donor</h2>
+
 		<table class='text-center'>
 			<tr>
 				<th>Donor Name</th>

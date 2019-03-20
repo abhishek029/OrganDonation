@@ -3,9 +3,9 @@
 
     if(isset($_GET['donor'])){
         $tbl = 'tbl_donors';
-        
     }
-    $results = getAll($tbl);
+    $results = getAllDonors($tbl);
+
 
     echo json_encode($results);
 ?>

@@ -35,7 +35,9 @@
 	<p><?php echo $message; ?></p>
 	<?php endif;?>
 
-    <h2 class="row text-center">Create User</h2>
+	<?php include('header.php'); ?>
+    
+	<h2 class="columns subHead small-12 text-center">Create Donor</h2>
     <form class="row small-4" action="admin_createdonor.php" method="post">
         <label class="columns" for="donor_name">Donor Name:</label>
         <input class="columns" type="text" id="donor_name" name="donor_name" value="">
