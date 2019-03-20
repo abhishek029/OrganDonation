@@ -5,14 +5,14 @@ function getAll($tbl){
 
 	$queryAll = 'SELECT * FROM tbl_donors';
 
-	$runAll = $pdo->query($queryAll);
+	$runAll = $pdo -> query($queryAll);
 
-	$result = array();
-	while($row = $runAll->fetch(PDO::FETCH_ASSOC)){
-		$result[] = $row;
-
-	}
-	return $result;
+		if($runAll){
+			return $runAll;
+		}else{
+			$error = 'There was a problem accessing this information';
+			return $error;
+		}
 }
 
 

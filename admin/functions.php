@@ -37,5 +37,5 @@
     
     $tbl_name = "tbl_subscriber";
 
-    getAllSubscriber($tbl_name);
+    // getAllSubscriber($tbl_name);
 ?>

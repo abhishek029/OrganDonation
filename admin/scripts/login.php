@@ -1,6 +1,6 @@
 <?php 
 
-function login($username, $password, $ip){
+function login($username, $password){
 	require_once('connect.php');
 	//Check if username exists
 
@@ -36,28 +36,9 @@ function login($username, $password, $ip){
 		while($found_user = $get_user_set->fetch(PDO::FETCH_ASSOC)){
 			$id = $found_user['user_id'];
 			$_SESSION['user_id'] = $id;
-			$_SESSION['user_name'] = $found_user['user_name'];
-
-			//Update user login IP
-			$update_ip_query = 'UPDATE tbl_user SET user_ip=:ip WHERE user_id=:id';
-			$update_ip_set = $pdo->prepare($update_ip_query);
-			$update_ip_set->execute(
-				array(
-					':ip'=>$ip,
-					':id'=>$id
-				)
-			);
-
-			// use AJAX call
-			$user = array();
-			$user['id'] = $found_user['user_id'];
-			$user['username'] = $found_user['user_name'];
-			$user['admin'] = $found_user['user_admin'];
-			$user['access'] = $found_user['user_access'];
-
-			// send back message
-
-			return $user;
+			$_SESSION['user_fname'] = $found_user['user_fname'];
+			$_SESSION['user_name'] = $found_user['user_name'];		
+			
 		}
 
 		if(empty($id)){
@@ -65,9 +46,11 @@ function login($username, $password, $ip){
 			return $message;
 		}
 
-		// redirect_to('index.php');
+		redirect_to('index.php');
 	}else{
 		$message = 'User Not Found';
 		return $message;
 	}
 }
+
+?>

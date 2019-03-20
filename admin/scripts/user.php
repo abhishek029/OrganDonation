@@ -1,17 +1,17 @@
 <?php 
-	function createUser($fname,$username,$password,$email){
+	function createDonor($donor_name,$donor_desc,$donor_thumb,$donor_video){
 		include('connect.php');
 	
-		$create_user_query = 'INSERT INTO tbl_user(user_fname,user_name,user_pass,user_email)';
-		$create_user_query .= ' VALUES(:fname,:username,:password,:email)';
+		$create_user_query = 'INSERT INTO tbl_donors(donor_name,donor_desc,donor_thumb,donor_video)';
+		$create_user_query .= ' VALUES(:donor_name,:donor_desc,:donor_thumb,:donor_video)';
 
 		$create_user_set = $pdo->prepare($create_user_query);
 		$create_user_set->execute(
 			array(
-				':fname'=>$fname,
-				':username'=>$username,
-				':password'=>$password,
-				':email'=>$email
+				':donor_name'=>$donor_name,
+				':donor_desc'=>$donor_desc,
+				':donor_thumb'=>$donor_thumb,
+				':donor_video'=>$donor_video
 			)
 		);
 
@@ -22,4 +22,29 @@
 			return $message;
 		}
 
+}
+
+function updateDonor($donor_name,$donor_desc,$donor_thumb,$donor_video){
+	
+}
+
+function deleteDonor($id){
+	include('connect.php');
+
+	$queryAll='delete from tbl_donors where donor_id = :id';
+
+	$runFilter = $pdo ->prepare($queryAll);
+
+	$runFilter->execute(
+		array(
+			':id'=>$id 
+		)
+	);
+
+	if($runFilter){
+		redirect_to('../index.php');
+	}else{
+		$error = 'There is problem in Filter';
+		return $error;
+	}
 }
