@@ -14,6 +14,18 @@ function getAll($tbl){
 			return $error;
 		}
 }
+function getAllDonors($tbl){
+	include('connect.php');
+
+	$queryAll = 'SELECT * FROM tbl_donors';
+
+	$runAll = $pdo->query($queryAll);
+	$result = array();
+	while($row = $runAll->fetch(PDO::FETCH_ASSOC)){
+		$result[] = $row;
+	}
+	return $result;
+}
 
 
 function getSingle($tbl, $col, $value){
@@ -21,6 +33,7 @@ function getSingle($tbl, $col, $value){
 	$querySingle = 'SELECT * FROM '.$tbl.' WHERE '.$col.' = '.$value;
 
 	$runSingle = $pdo->query($querySingle);
+	
 	if($runSingle){
 		return $runSingle;
 	}else{

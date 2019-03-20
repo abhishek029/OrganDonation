@@ -24,8 +24,23 @@
 
 }
 
-function updateDonor($donor_name,$donor_desc,$donor_thumb,$donor_video){
-	
+function updateDonor($id,$donor_name,$donor_desc,$donor_thumb,$donor_video){
+	include('connect.php');
+
+	$edit_donor_query = 'UPDATE tbl_donors set donor_name=:donor_name, donor_desc=:donor_desc, donor_thumb=:donor_thumb, donor_video=:donor_video WHERE donor_id=:id';
+
+	$edit_donor_set = $pdo->prepare($edit_donor_query);
+	$edit_donor_set->execute(
+		array(
+			':donor_name'=>$donor_name,
+			':donor_desc'=>$donor_desc,
+			':donor_thumb'=>$donor_thumb,
+			':donor_video'=>$donor_video,
+			':id'=>$id
+		)
+	);
+
+	redirect_to('index.php');   
 }
 
 function deleteDonor($id){

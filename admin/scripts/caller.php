@@ -14,8 +14,8 @@ confirm_logged_in();
 				deleteDonor($id);
 				break;
 			case 'update':
-				$id = $_GET['id'];
-				// updateDonor($id);
+				$id = $_GET['donor_id'];
+				$_SESSION['donor_id']=$_GET['id'];
 				redirect_to('../admin_updatedonor.php?donor_id='.$id);
 				break;
 		}
