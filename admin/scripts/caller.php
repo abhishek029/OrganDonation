@@ -1,6 +1,6 @@
 <?php
 	require_once('config.php');
-confirm_logged_in();
+	confirm_logged_in();
 	if(isset($_GET['caller_id'])){
 		$action = $_GET['caller_id'];
 

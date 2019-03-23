@@ -66,8 +66,8 @@
         <div>
             <section class="row" id="mainVideo">
             <div class="col-sm-12">
-                <video class="col-sm-8 offset-sm-2" controls>
-                <source :src="'video/'+currentDonorDetails.donor_video"></source>
+                <video class="col-sm-8 offset-sm-2" :src="'video/'+currentDonorDetails.donor_video" type="video/mp4" controls>
+                
                 </video>
                 {{currentDonorDetails.donor_video}}
                  <p class="col-sm-6 offset-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos excepturi officia saepe blanditiis vero nostrum quae iusto possimus minus necessitatibus? Voluptatem ab esse animi veniam perspiciatis labore suscipit voluptates alias! All you need is health card and a couple of minutes to become an organ donor.</p>
@@ -77,7 +77,7 @@
 
             <!-- code for all recipients in database -->
             <section class="row" id="moreVideo">
-                <div v-for="donor in retrivedDonor" class="col-sm-3">
+                <div v-for="donor in retrivedDonor" @click='changeDonor(donor)' class="col-sm-3">
                     <img class="col-sm-9 offset-sm-3" :src="'images/'+donor.donor_thumb" :alt="donor.donor_name">
                     <h3 class="col-sm-9 offset-sm-3 text-center">{{donor.donor_name}}</h3>
                     <p class="col-sm-9 offset-sm-3  text-center">{{donor.donor_desc}}</p> 
@@ -113,6 +113,11 @@
         calledOnParent(){
             console.log("this method is from vue");
         },
+        changeDonor(donor){
+            console.log("current dodor changed to "+donor.donor_name);
+            this.currentDonorDetails = donor;
+        },
+
         loadDonors(){            
             
             let url = `./admin/scripts/index.php?donor=1`;
