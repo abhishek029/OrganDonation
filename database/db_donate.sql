@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 20, 2019 at 04:10 PM
+-- Generation Time: Mar 25, 2019 at 10:21 PM
 -- Server version: 5.7.21
 -- PHP Version: 5.6.35
 
@@ -36,22 +36,21 @@ CREATE TABLE IF NOT EXISTS `tbl_donors` (
   `donor_thumb` varchar(125) NOT NULL,
   `donor_video` varchar(125) NOT NULL,
   PRIMARY KEY (`donor_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_donors`
 --
 
 INSERT INTO `tbl_donors` (`donor_id`, `donor_name`, `donor_desc`, `donor_thumb`, `donor_video`) VALUES
-(1, 'Donor1', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. All you need is health card and a couple of minutes to become an organ donor.', 'donor1.jpg', 'donor1.mp4'),
-(2, 'Donor2', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. All you need is health card and a couple of minutes to become an organ donor.', 'donor2.jpg', 'donor2.mp4'),
-(3, 'Donor3', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. All you need is health card and a couple of minutes to become an organ donor.', 'donor3.jpg', 'donor3.mp4'),
-(4, 'Donor4', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. All you need is health card and a couple of minutes to become an organ donor.', 'donor4.jpg', 'donor4.mp4'),
-(5, 'Donor5', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. All you need is health card and a couple of minutes to become an organ donor.', 'donor5.jpg', 'donor5.mp4'),
-(6, 'Donor6', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. All you need is health card and a couple of minutes to become an organ donor.', 'donor6.jpg', 'donor6.mp4'),
-(7, 'Donor7', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. All you need is health card and a couple of minutes to become an organ donor.', 'donor7.jpg', 'donor7.mp4'),
-(8, 'Donor8', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. All you need is health card and a couple of minutes to become an organ donor.', 'donor8.jpg', 'donor8.mp4'),
-(13, 'Donor9', 'description of donor9', 'donor9.jpg', 'donor9.mp4');
+(1, 'Shauna', 'Shauna is an independent mother of 2. Shauna received the great gift of life  (Kidney Transplant) from a wonderful organ donor back in 2017.', 'shauna.jpg', 'shauna.mp4'),
+(2, 'Kim', 'Kim is a school teacher and a single mother of four. One day she learned her kidneys had failed and after five years of dialysis treatment, she was added to the organ donation list.', 'kim.jpg', 'kim.mp4'),
+(3, 'Ernest', 'Ernest was a person who loved life. He also was committed to being an organ donor—and told his family how much he believed in it. “He put the pink dot on his driver’s license himself,” remembers Bernice.\r\n', 'ernest.jpg', 'temp.mp4'),
+(4, 'Carlee', 'Carlee has a unique distinction. She is the first person to be featured twice in organdonor.\r\nThat\'s because Carlee is the fortunate recipient of two heart transplants: the first when she was 1½ years old, the second when she was 13.', 'carlee.jpg', 'temp.mp4'),
+(5, 'Brandon', 'Brandon’s parents donated his organs at Beaumont Hospital, Royal Oak, in February 2007. Brandon himself made that decision years earlier.', 'brandon.jpg', 'temp.mp4'),
+(6, 'Gabriel', 'Gabriel received a kidney transplant when he was only two years old. Years later, Gabriel continues to thrive thanks to his donor’s generous gift. He is an avid reader and creative artist. ', 'gabriel.jpg', 'temp.mp4'),
+(7, 'Daisy', 'From early childhood, Daisy suffered from aneurysms and a heart malformation. At age 17, her doctors decided she needed open-heart surgery. Although the surgery was a success, an undiscovered brain aneurysm ruptured shortly afterward and Daisy was declared brain dead.', 'daisy.jpg', 'temp.mp4'),
+(8, 'Blake', 'Blake was very young when he received the great gift of life (Heart Transplant) Today, at 14, Blake is a normal, active teenager and a high school freshman who loves sports, loves his team, and whose favorite subject in school is algebra.', 'blake.jpg', 'temp.mp4');
 
 -- --------------------------------------------------------
 
