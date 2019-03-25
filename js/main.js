@@ -69,18 +69,25 @@
                 <video class="col-sm-8 offset-sm-2" :src="'video/'+currentDonorDetails.donor_video" type="video/mp4" controls>
                 
                 </video>
-                {{currentDonorDetails.donor_video}}
-                 <p class="col-sm-6 offset-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos excepturi officia saepe blanditiis vero nostrum quae iusto possimus minus necessitatibus? Voluptatem ab esse animi veniam perspiciatis labore suscipit voluptates alias! All you need is health card and a couple of minutes to become an organ donor.</p>
-                <button class="col-sm-4 offset-sm-4 playBtn">REGISTER NOW</button>
+                <div class="row offset-2">
+                <div class="col-sm-3">
+                    <img class="col" :src="'images/' + currentDonorDetails.donor_thumb" alt="donor">
+                </div>
+                <div class="col-sm-6">
+                    <h3>{{currentDonorDetails.donor_name}}</h3>
+                    <p>{{currentDonorDetails.donor_desc}}</p>
+                </div>
+                 </div>
+                <a class="col-4 btn offset-sm-4 playBtn"  href="https://www.ontario.ca/page/organ-and-tissue-donor-registration?utm_source=so&utm_medium=keyword&utm_campaign=original/" target="_blank"><b>REGISTER NOW</b></a>
             </div>
             </section>
 
             <!-- code for all recipients in database -->
             <section class="row" id="moreVideo">
                 <div v-for="donor in retrivedDonor" @click='changeDonor(donor)' class="col-sm-3">
-                    <img class="col-sm-9 offset-sm-3" :src="'images/'+donor.donor_thumb" :alt="donor.donor_name">
-                    <h3 class="col-sm-9 offset-sm-3 text-center">{{donor.donor_name}}</h3>
-                    <p class="col-sm-9 offset-sm-3  text-center">{{donor.donor_desc}}</p> 
+                    <img class="col-sm-10 offset-sm-2" :src="'images/'+donor.donor_thumb" :alt="donor.donor_name">
+                    <h3 class="col-sm-10 offset-sm-2 text-center">{{donor.donor_name}}</h3>
+                    <p class="col-sm-10 offset-sm-2  text-center">{{donor.donor_desc}}</p> 
                 </div>               
             </section>
 
@@ -89,15 +96,13 @@
                 <p class="col-sm-8 offset-sm-2">
                     Are you an organ donation recipient who is willing to share your story? We'd love to hear from you an use your experience to help spread awareness of the pressing need for organ donors.
                 </p>
-                <button class="col-sm-4 offset-sm-4 contactBtn">CONTACT US</button>
             </section>
         </div>
     `,
 
     data(){
         return{
-        testmessage: "sup",
-        
+            
         currentDonorDetails: {},
 
         retrivedDonor: []
