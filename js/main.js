@@ -18,30 +18,35 @@
                 </div>
             </section>
             <section class="row info">
-                <h2 class="col-md-12 text-center">Who Can Donate ?</h2>
-                <p class="col-md-12">Selecting the right donor for a live donor liver transplant requires experience, skill and technical expertise on the
+                <h2 class="col-md-12 col-sm-12 text-center">Who Can Donate ?</h2>
+                <p class="col-md-12 col-sm-12">Selecting the right donor for a live donor liver transplant requires experience, skill and technical expertise on the
                     part of the many doctors, nurses and other health care professionals who make up the Live Donor Team.
                     Potential live liver donors are carefully evaluated. The health and safety of the donor is the most important concern
                     during the evaluation. Only donors in good health are considered.</p>
-                <h2 class="col-md-6">A potential donor should:</h2>
-                <h2 class="col-md-6">A donor must be free from:</h2>
-                <p class="col-md-6">Be either a relative, spouse or friend
-                        Have a compatible blood type
-                        Be in good overall health and physical condition
-                        Be older than 19 years of age and younger than 55 years of age
-                        Have a near normal body mass index (not obese)</p>
                 
-                <p class="col-md-6">History of Hepatitis B or C
-                        HIV infection
-                        Alcohol dependence/abuse
-                        Substance abuse
-                        Major mental illness unresponsive to treatment
-                        A recent history of cancer</p>
-               
         </section>
         <section class="row transplant">
-                <h2 class="col-md-12 text-center">Live Donor Liver Transplantation</h2>
-                <div class="col-md-12">Usually, livers for transplantation come from donors who have died. Some may have registered their wishes with
+            <div class="col-md-6 col-sm-12">
+                <h2 class="text-center">A potential donor should:</h2>
+                <p>Be either a relative, spouse or friend
+                    Have a compatible blood type
+                    Be in good overall health and physical condition
+                    Be older than 19 years of age and younger than 55 years of age
+                    Have a near normal body mass index (not obese)</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h2 class="text-center">A donor must be free from:</h2>
+                <p>History of Hepatitis B or C
+                    HIV infection
+                    Alcohol dependence/abuse
+                    Substance abuse
+                    Major mental illness unresponsive to treatment
+                    A recent history of cancer</p>
+            </div>
+        </section>
+        <section class="row transplant">
+                <h2 class="col-md-12 col-sm-12 text-center">Live Donor Liver Transplantation</h2>
+                <div class="col-md-12 col-sm-12">Usually, livers for transplantation come from donors who have died. Some may have registered their wishes with
                         the Organ Donor Registry, if not their family may have given permission. Unfortunately, there are not enough
                         deceased donor organs available for today’s growing list of people who are waiting for a transplant. Many patients
                         waiting for liver transplants become too sick to undergo transplant surgery, or die while on the waiting list.
@@ -55,6 +60,7 @@
                         regenerate or grow. Both halves of the liver used for transplantation regenerate to the size of a normal liver within
                         a period of 4-8 weeks. Today, many transplant centres are performing these life saving surgeries.</div>
         </section>
+        
             
             <section class="row" id="content">
                 <div class="col-xs-12 col-md-4">
