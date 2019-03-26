@@ -84,7 +84,7 @@
 
             <!-- code for all recipients in database -->
             <section class="row" id="moreVideo">
-                <div v-for="donor in retrivedDonor" @click='changeDonor(donor)' class="col-sm-3">
+                <div v-for="donor in retrivedDonor" @click='changeDonor(donor)' class="col-md-3 sm-12">
                     <img class="col-sm-10 offset-sm-2" :src="'images/'+donor.donor_thumb" :alt="donor.donor_name">
                     <h3 class="col-sm-10 offset-sm-2 text-center">{{donor.donor_name}}</h3>
                     <p class="col-sm-10 offset-sm-2  text-center">{{donor.donor_desc}}</p> 

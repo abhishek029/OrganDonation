@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 25, 2019 at 10:21 PM
+-- Generation Time: Mar 26, 2019 at 01:05 AM
 -- Server version: 5.7.21
 -- PHP Version: 5.6.35
 
@@ -51,30 +51,6 @@ INSERT INTO `tbl_donors` (`donor_id`, `donor_name`, `donor_desc`, `donor_thumb`,
 (6, 'Gabriel', 'Gabriel received a kidney transplant when he was only two years old. Years later, Gabriel continues to thrive thanks to his donor’s generous gift. He is an avid reader and creative artist. ', 'gabriel.jpg', 'temp.mp4'),
 (7, 'Daisy', 'From early childhood, Daisy suffered from aneurysms and a heart malformation. At age 17, her doctors decided she needed open-heart surgery. Although the surgery was a success, an undiscovered brain aneurysm ruptured shortly afterward and Daisy was declared brain dead.', 'daisy.jpg', 'temp.mp4'),
 (8, 'Blake', 'Blake was very young when he received the great gift of life (Heart Transplant) Today, at 14, Blake is a normal, active teenager and a high school freshman who loves sports, loves his team, and whose favorite subject in school is algebra.', 'blake.jpg', 'temp.mp4');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_subscriber`
---
-
-DROP TABLE IF EXISTS `tbl_subscriber`;
-CREATE TABLE IF NOT EXISTS `tbl_subscriber` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(150) NOT NULL,
-  `email` varchar(125) NOT NULL,
-  `number` bigint(15) NOT NULL,
-  `subscribe_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `tbl_subscriber`
---
-
-INSERT INTO `tbl_subscriber` (`id`, `name`, `email`, `number`, `subscribe_date`) VALUES
-(1, 'Pan', 'pan@gmail.com', 4379907879, '2019-02-19 20:59:16'),
-(2, 'Main', 'abc@abc', 122456667, '2019-02-19 21:21:51');
 
 -- --------------------------------------------------------
 

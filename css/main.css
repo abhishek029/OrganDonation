@@ -9,14 +9,8 @@ body{
     cursor: pointer;
 }
 
-#logInBtn{
-    background-color: #bd467e;
-    color: white;
-    cursor: pointer;
-    margin-left: 5px;
-}
 
-/* quize css */
+/* quiz css */
 #quiz{
     width: 100%;
     height: 100vh;
@@ -73,7 +67,8 @@ body{
 }
 #content{
     background: #013d7b;
-    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     color: white;
 }
 
@@ -81,7 +76,18 @@ body{
     width: 40px;
     height: 40px;
 }
-
+.nav-link{
+    color: #bd467e;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: #013d7b;
+    font-weight: bold;
+}
+footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 /*---------------------Video Page CSS-------------------------*/
 
