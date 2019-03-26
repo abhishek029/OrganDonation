@@ -53,7 +53,7 @@
                     </div>
                     
                     <div class="col-xs-4 offset-xs-3 offset-sm-4">
-                        <button class=" offset-xs-4 btn playBtn">PLAY NOW</button>
+                        <a href="quiz/quiz.html" target="_blank" class="offset-xs-4 btn playBtn">PLAY NOW</a>
                     </div>                  
                     
                 </div>
