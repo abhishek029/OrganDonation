@@ -71,6 +71,20 @@ body{
     color: white;
 }
 
+.info{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #bd467e;
+    color: white;
+}
+
+.transplant{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ededed;
+    color:black;
+}
+
 /*---------------------Video Page CSS-------------------------*/
 
 #mainVideo div{
