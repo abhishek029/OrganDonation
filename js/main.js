@@ -14,7 +14,9 @@
             <section class="row" id="adds">
                 <div class="col-sm-12">
                     <img class="col-sm-8 offset-sm-2" src="images/thumbnail.jpg" alt="Barbara Thomas">
-                    <p class="col-sm-12 col-md-6 offset-md-3 text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos excepturi officia saepe blanditiis vero nostrum quae iusto possimus minus necessitatibus? Voluptatem ab esse animi veniam perspiciatis labore suscipit voluptates alias! All you need is health card and a couple of minutes to become an organ donor.</p>
+                    <p class="col-sm-12 col-md-6 offset-md-3 text-center"> 
+                    The primary objective is to promote awareness of life saving solid organ transplants. The secondary objective is to promote awareness of tissue and life-enhancing transplants. As well so,to significantly increase the number of members of the public registered as organ and tissue donors
+                    </p>
                 </div>
             </section>
             
