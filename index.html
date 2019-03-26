@@ -23,7 +23,8 @@
     <main id="app">
 
         <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-            <a class="navbar-brand" href="index.html"><b>SaveEight.ca</b></a>
+            
+            <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="logo" id="headerLogo"><b>SaveEight.ca</b></a>
 
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,6 +46,24 @@
 
         </section>
         
+        <footer>
+            <!--Logo-->
+            <!--Links-->
+            
+            
+            <ul class="nav">
+                <li><img src="images/logo.svg" alt="logo" id="footerLogo"></li>
+                <li><a class="navbar-brand" href="index.html"><b>SaveEight.ca</b></a></li></li>
+                <li><router-link :to="{ path: '/'}" class="nav-item nav-link active">Home</router-link></li>
+                <li><router-link :to="{ path: 'video'}" class="nav-item nav-link" >Video</router-link></li>
+                <li><router-link :to="{ path: 'quiz'}" class="nav-item nav-link">Quiz</router-link></li>
+                
+                <li><a class="nav-item nav-link" href="admin/index.php">Admin Login</a></li>
+            </ul>
+            <!--Social-->
+            <!--Admin Login-->
+        </footer>
+
     </main>
     <script src="js/main.js"></script>
 </body>
