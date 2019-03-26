@@ -1,5 +1,143 @@
 @import '_vars';
 
-section{
-    margin: 80px;
+body{
+    font-family: 'Raleway', sans-serif;
 }
+#routerView{margin-top:55px}
+
+#saveBtn{
+    background-color: #bd467e;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* quiz css */
+#quiz{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-repeat: no-repeat;
+    background-image: url("../images/quizpromo_desktop.jpg");
+}
+#quiz h2{
+    margin-top: 225px;
+    font-size: 40px;
+}
+#quiz .playBtn,#mainVideo div button{
+    background-color: #bd467e;
+    color: white;
+}
+
+
+/*--------------------Home Page CSS-----------------------*/
+
+#headerLogo {
+    width: 50px;
+    height: 50px;
+}
+
+#promo{
+    background-image: url('../images/promo_desktop.jpg');
+    /* height: 603px; */
+    color: white;
+    background-repeat: no-repeat;
+}
+#promo h2{
+    background-color:#bd467e;
+}
+
+#text{
+    margin-top: 400px;
+}
+
+#promo a:link {
+    color: #e8a5c4;
+}
+
+#promo a:hover {
+    color: #bd467e;
+}
+
+#adds{
+    background: #ededed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#adds p{
+    margin-top: 40px;
+}
+#content{
+    background: #013d7b;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+#footerLogo {
+    width: 40px;
+    height: 40px;
+}
+.nav-link{
+    color: #bd467e;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: #013d7b;
+    font-weight: bold;
+}
+footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*---------------------Video Page CSS-------------------------*/
+
+#mainVideo div{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #ededed;
+}
+
+#moreVideo div{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#moreVideo{
+    background:#bd467e;
+}
+#moreVideo:hover{
+    cursor: pointer;
+}
+
+#moreVideo div img{
+    opacity: 0.7;
+    transition: .2s;
+}
+
+
+#moreVideo div img:hover{
+    opacity: 1;
+    
+    transition: .2s;
+}
+
+
+#moreVideo p{
+    color: white;
+}
+#contactStory{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #ededed;
+}
+#shareHead{
+    color: White;
+    background: #013d7b;
+}
+
+.contactBtn{
+    color: white;
+    background: #a787b8;
+}
+
